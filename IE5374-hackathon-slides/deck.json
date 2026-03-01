@@ -6,12 +6,31 @@
     "aspectRatio": "16:9"
   },
   "theme": {
-    "slide": { "background": { "color": "#ffffff" } },
-    "text": { "fontFamily": "Inter, system-ui, sans-serif", "fontSize": 24, "color": "#1e293b" },
-    "code": { "theme": "github-light", "fontSize": 14 },
-    "shape": { "stroke": "#cbd5e1", "strokeWidth": 1 },
-    "image": { "objectFit": "contain" },
-    "table": { "headerBackground": "#2563eb", "borderColor": "#e2e8f0" }
+    "slide": {
+      "background": {
+        "color": "#ffffff"
+      }
+    },
+    "text": {
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "fontSize": 24,
+      "color": "#1e293b"
+    },
+    "code": {
+      "theme": "github-light",
+      "fontSize": 14
+    },
+    "shape": {
+      "stroke": "#cbd5e1",
+      "strokeWidth": 1
+    },
+    "image": {
+      "objectFit": "contain"
+    },
+    "table": {
+      "headerBackground": "#2563eb",
+      "borderColor": "#e2e8f0"
+    }
   },
   "slides": [
     {
@@ -19,47 +38,151 @@
       "notes": "Hello everyone. Today we are presenting our World Cup Match Predictor and Analyst Chatbot, built for Track 1 of the hackathon.\n\n[step:1]This is a LangChain-powered RAG pipeline with a ReAct agent that answers questions about World Cup history and predicts match outcomes.[/step]\n\n[step:2]Let's get started.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 8 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 8
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text",
+          "id": "e2",
+          "type": "text",
           "content": "# World Cup Match Predictor\n# & Analyst Chatbot",
-          "position": { "x": 80, "y": 120 }, "size": { "w": 800, "h": 160 },
-          "style": { "fontSize": 44, "color": "#0f172a", "textAlign": "center", "lineHeight": 1.3 }
+          "position": {
+            "x": 80,
+            "y": 120
+          },
+          "size": {
+            "w": 800,
+            "h": 160
+          },
+          "style": {
+            "fontSize": 44,
+            "color": "#0f172a",
+            "textAlign": "center",
+            "lineHeight": 1.3
+          }
         },
         {
-          "id": "e3", "type": "text",
+          "id": "e3",
+          "type": "text",
           "content": "**Track 1** | LangChain RAG Pipeline with ReAct Agent",
-          "position": { "x": 180, "y": 300 }, "size": { "w": 600, "h": 40 },
-          "style": { "fontSize": 22, "color": "#2563eb", "textAlign": "center" }
+          "position": {
+            "x": 180,
+            "y": 300
+          },
+          "size": {
+            "w": 600,
+            "h": 40
+          },
+          "style": {
+            "fontSize": 22,
+            "color": "#2563eb",
+            "textAlign": "center"
+          }
         },
         {
-          "id": "e4", "type": "shape", "shape": "line",
-          "position": { "x": 280, "y": 360 }, "size": { "w": 400, "h": 4 },
-          "style": { "stroke": "#e2e8f0", "strokeWidth": 2 }
+          "id": "e4",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 280,
+            "y": 360
+          },
+          "size": {
+            "w": 400,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#e2e8f0",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e5", "type": "text",
+          "id": "e5",
+          "type": "text",
           "content": "IE5374 Applied Generative AI Hackathon",
-          "position": { "x": 200, "y": 380 }, "size": { "w": 560, "h": 40 },
-          "style": { "fontSize": 18, "color": "#64748b", "textAlign": "center" }
+          "position": {
+            "x": 200,
+            "y": 380
+          },
+          "size": {
+            "w": 560,
+            "h": 40
+          },
+          "style": {
+            "fontSize": 18,
+            "color": "#64748b",
+            "textAlign": "center"
+          }
         },
         {
-          "id": "e6", "type": "text",
+          "id": "e6",
+          "type": "text",
           "content": "Prof. Dehghani | Northeastern University | March 2026",
-          "position": { "x": 200, "y": 420 }, "size": { "w": 560, "h": 30 },
-          "style": { "fontSize": 15, "color": "#94a3b8", "textAlign": "center" }
+          "position": {
+            "x": 200,
+            "y": 420
+          },
+          "size": {
+            "w": 560,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#94a3b8",
+            "textAlign": "center"
+          }
         }
       ],
       "animations": [
-        { "target": "e1", "trigger": "onEnter", "effect": "slideInLeft", "duration": 400 },
-        { "target": "e2", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 500 },
-        { "target": "e3", "trigger": "onClick", "effect": "fadeIn", "duration": 400 },
-        { "target": "e4", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 100, "duration": 300 },
-        { "target": "e5", "trigger": "onClick", "effect": "fadeIn", "duration": 300 },
-        { "target": "e6", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 }
+        {
+          "target": "e1",
+          "trigger": "onEnter",
+          "effect": "slideInLeft",
+          "duration": 400
+        },
+        {
+          "target": "e2",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 500
+        },
+        {
+          "target": "e3",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 400
+        },
+        {
+          "target": "e4",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 100,
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e6",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        }
       ]
     },
     {
@@ -67,106 +190,399 @@
       "notes": "Let me start with a quick overview of what we built.\n\n[step:1]Our system is a conversational chatbot. The user interacts through a Gradio UI. Queries go through ConversationBufferMemory into a ReAct agent powered by GPT-3.5-turbo, which has access to 7 specialized tools for discovery, ingestion, retrieval, analytics, prediction, synthesis, and report generation.[/step]\n\n[step:2]For data, we used the international football results dataset from GitHub, which contains about 49,000 matches. We filtered it down to 964 FIFA World Cup matches across 82 teams, spanning from 1930 to 2022. All data is cached locally for reproducibility.[/step]\n\n[step:3]The full pipeline flows from CSV ingestion, to FAISS vector store, to RAG retrieval, through the ReAct agent with its 7 tools, and finally into a two-stage prediction chain.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Project Overview",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Project Overview",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "text",
+          "id": "e4",
+          "type": "text",
           "content": "A conversational chatbot for World Cup history Q&A and match prediction, built as a **multi-stage LangChain pipeline** applying core course concepts.",
-          "position": { "x": 60, "y": 95 }, "size": { "w": 840, "h": 45 },
-          "style": { "fontSize": 17, "color": "#334155", "lineHeight": 1.4 }
+          "position": {
+            "x": 60,
+            "y": 95
+          },
+          "size": {
+            "w": 840,
+            "h": 45
+          },
+          "style": {
+            "fontSize": 17,
+            "color": "#334155",
+            "lineHeight": 1.4
+          }
         },
         {
-          "id": "e5", "type": "code", "language": "text",
+          "id": "e5",
+          "type": "code",
+          "language": "text",
           "content": "User (Gradio UI)\n  -> ConversationBufferMemory (chat_history + user preferences)\n  -> ReAct Agent (GPT-3.5-turbo)\n      |-- dataset_discovery_tool    |-- retrieval_tool (FAISS RAG)\n      |-- data_ingestion_tool       |-- analytics_tool (pandas)\n      |-- prediction_tool (2-stage) |-- llm_synthesis_tool\n      |-- report_generation_tool\n  -> Formatted Response",
-          "position": { "x": 60, "y": 148 }, "size": { "w": 530, "h": 190 },
-          "style": { "theme": "github-light", "fontSize": 13, "borderRadius": 8 }
+          "position": {
+            "x": 60,
+            "y": 148
+          },
+          "size": {
+            "w": 530,
+            "h": 190
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 13,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e6", "type": "text",
+          "id": "e6",
+          "type": "text",
           "content": "**Data:** 49,071 international matches\nFiltered to **964 World Cup matches**\nacross **82 teams** (1930-2022)\n\n3 CSVs from github.com/martj42\n/international_results\n\nLocally cached for reproducibility",
-          "position": { "x": 610, "y": 148 }, "size": { "w": 320, "h": 190 },
-          "style": { "fontSize": 15, "color": "#475569", "lineHeight": 1.6 }
+          "position": {
+            "x": 610,
+            "y": 148
+          },
+          "size": {
+            "w": 320,
+            "h": 190
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#475569",
+            "lineHeight": 1.6
+          }
         },
         {
-          "id": "e7", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 360 }, "size": { "w": 840, "h": 70 },
-          "style": { "fill": "#eff6ff", "stroke": "#bfdbfe", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e7",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 360
+          },
+          "size": {
+            "w": 840,
+            "h": 70
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#bfdbfe",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e8", "type": "text",
+          "id": "e8",
+          "type": "text",
           "content": "**Pipeline:**  CSV Ingestion  ->  FAISS Vector Store  ->  RAG Retrieval Chain  ->  ReAct Agent (7 tools)  ->  Two-Stage Prediction Chain",
-          "position": { "x": 80, "y": 370 }, "size": { "w": 800, "h": 50 },
-          "style": { "fontSize": 16, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+          "position": {
+            "x": 80,
+            "y": 370
+          },
+          "size": {
+            "w": 800,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 16,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.4
+          }
         },
         {
-          "id": "e9", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 450 }, "size": { "w": 200, "h": 45 },
-          "style": { "fill": "#f0fdf4", "stroke": "#86efac", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e9",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 450
+          },
+          "size": {
+            "w": 200,
+            "h": 45
+          },
+          "style": {
+            "fill": "#f0fdf4",
+            "stroke": "#86efac",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e10", "type": "text", "content": "**LangChain + OpenAI**",
-          "position": { "x": 65, "y": 457 }, "size": { "w": 190, "h": 30 },
-          "style": { "fontSize": 14, "color": "#166534", "textAlign": "center", "verticalAlign": "middle" }
+          "id": "e10",
+          "type": "text",
+          "content": "**LangChain + OpenAI**",
+          "position": {
+            "x": 65,
+            "y": 457
+          },
+          "size": {
+            "w": 190,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#166534",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         },
         {
-          "id": "e11", "type": "shape", "shape": "rectangle",
-          "position": { "x": 280, "y": 450 }, "size": { "w": 200, "h": 45 },
-          "style": { "fill": "#fef3c7", "stroke": "#fcd34d", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e11",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 280,
+            "y": 450
+          },
+          "size": {
+            "w": 200,
+            "h": 45
+          },
+          "style": {
+            "fill": "#fef3c7",
+            "stroke": "#fcd34d",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e12", "type": "text", "content": "**FAISS + pandas**",
-          "position": { "x": 285, "y": 457 }, "size": { "w": 190, "h": 30 },
-          "style": { "fontSize": 14, "color": "#92400e", "textAlign": "center", "verticalAlign": "middle" }
+          "id": "e12",
+          "type": "text",
+          "content": "**FAISS + pandas**",
+          "position": {
+            "x": 285,
+            "y": 457
+          },
+          "size": {
+            "w": 190,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#92400e",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         },
         {
-          "id": "e13", "type": "shape", "shape": "rectangle",
-          "position": { "x": 500, "y": 450 }, "size": { "w": 200, "h": 45 },
-          "style": { "fill": "#eff6ff", "stroke": "#93c5fd", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e13",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 500,
+            "y": 450
+          },
+          "size": {
+            "w": 200,
+            "h": 45
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#93c5fd",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e14", "type": "text", "content": "**Gradio + matplotlib**",
-          "position": { "x": 505, "y": 457 }, "size": { "w": 190, "h": 30 },
-          "style": { "fontSize": 14, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle" }
+          "id": "e14",
+          "type": "text",
+          "content": "**Gradio + matplotlib**",
+          "position": {
+            "x": 505,
+            "y": 457
+          },
+          "size": {
+            "w": 190,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         },
         {
-          "id": "e15", "type": "shape", "shape": "rectangle",
-          "position": { "x": 720, "y": 450 }, "size": { "w": 180, "h": 45 },
-          "style": { "fill": "#faf5ff", "stroke": "#d8b4fe", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e15",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 720,
+            "y": 450
+          },
+          "size": {
+            "w": 180,
+            "h": 45
+          },
+          "style": {
+            "fill": "#faf5ff",
+            "stroke": "#d8b4fe",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e16", "type": "text", "content": "**GPT-3.5-turbo**",
-          "position": { "x": 725, "y": 457 }, "size": { "w": 170, "h": 30 },
-          "style": { "fontSize": 14, "color": "#7c3aed", "textAlign": "center", "verticalAlign": "middle" }
+          "id": "e16",
+          "type": "text",
+          "content": "**GPT-3.5-turbo**",
+          "position": {
+            "x": 725,
+            "y": 457
+          },
+          "size": {
+            "w": 170,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#7c3aed",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e5", "trigger": "onClick", "effect": "slideInLeft", "duration": 400 },
-        { "target": "e6", "trigger": "onClick", "effect": "slideInRight", "duration": 400 },
-        { "target": "e7", "trigger": "onClick", "effect": "fadeIn", "duration": 400 },
-        { "target": "e8", "trigger": "withPrevious", "effect": "fadeIn", "delay": 200, "duration": 400 },
-        { "target": "e9", "trigger": "afterPrevious", "effect": "scaleIn", "delay": 100, "duration": 300 },
-        { "target": "e10", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e11", "trigger": "afterPrevious", "effect": "scaleIn", "delay": 50, "duration": 300 },
-        { "target": "e12", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e13", "trigger": "afterPrevious", "effect": "scaleIn", "delay": 50, "duration": 300 },
-        { "target": "e14", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e15", "trigger": "afterPrevious", "effect": "scaleIn", "delay": 50, "duration": 300 },
-        { "target": "e16", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "onClick",
+          "effect": "slideInLeft",
+          "duration": 400
+        },
+        {
+          "target": "e6",
+          "trigger": "onClick",
+          "effect": "slideInRight",
+          "duration": 400
+        },
+        {
+          "target": "e7",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 400
+        },
+        {
+          "target": "e8",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 400
+        },
+        {
+          "target": "e9",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "delay": 100,
+          "duration": 300
+        },
+        {
+          "target": "e10",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e11",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "delay": 50,
+          "duration": 300
+        },
+        {
+          "target": "e12",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e13",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "delay": 50,
+          "duration": 300
+        },
+        {
+          "target": "e14",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e15",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "delay": 50,
+          "duration": 300
+        },
+        {
+          "target": "e16",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        }
       ]
     },
     {
@@ -174,53 +590,191 @@
       "notes": "This slide maps every course concept to our implementation.\n\n[step:1]Here is the full mapping. Starting from the top: we applied prompt engineering strategies we learned, including zero-shot and chain-of-thought prompting, in our system prompts for retrieval, synthesis, and prediction tools. The ReAct pattern, which we studied as an advanced prompting strategy, became the core architecture of our agent, running Thought-Action-Observation loops.\n\nFor LangChain memory, we used ConversationBufferMemory to persist full chat history, exactly as we practiced in Lab 4. Prompt templates with dynamic variable injection power all 7 tools.\n\nWe built sequential chains using LCEL pipe syntax for our two-stage prediction pipeline, and the entire agent uses tool orchestration with 7 decorated tool functions.\n\nFinally, RAG ties everything together, using a FAISS vector store with create_retrieval_chain for grounded question answering.[/step]\n\n[step:2]The key point here is that every stage of our pipeline directly applies something we learned in this course. This was not just a technical exercise, it was a synthesis of the entire semester.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Course Concepts Applied",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Course Concepts Applied",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "table",
-          "columns": ["Course Module", "Concept", "How We Applied It"],
-          "rows": [
-            ["Prompt Engineering", "Zero-Shot / Few-Shot / CoT", "System prompts for retrieval, synthesis, and prediction tools with structured reasoning"],
-            ["Prompt Engineering", "ReAct (Reason + Act)", "Core agent pattern: Thought -> Action -> Observation loop with 7 tools"],
-            ["LangChain Memory", "ConversationBufferMemory", "Persists full chat history across multi-turn conversations"],
-            ["LangChain Memory", "Prompt Templates", "PromptTemplate & ChatPromptTemplate for all 7 tools with dynamic variable injection"],
-            ["LangChain Chains", "Sequential Chains", "Two-stage prediction: gather_prompt | LLM -> predict_prompt | LLM"],
-            ["LangChain Agents", "Tool Orchestration", "7 @tool-decorated functions, agent selects dynamically via ReAct reasoning"],
-            ["RAG", "Retrieval-Augmented Generation", "FAISS vector store + create_retrieval_chain for grounded Q&A"]
+          "id": "e4",
+          "type": "table",
+          "columns": [
+            "Course Module",
+            "Concept",
+            "How We Applied It"
           ],
-          "position": { "x": 40, "y": 100 }, "size": { "w": 880, "h": 310 },
-          "style": { "fontSize": 13, "color": "#334155", "headerBackground": "#2563eb", "headerColor": "#ffffff", "borderColor": "#e2e8f0", "striped": true, "borderRadius": 8 }
+          "rows": [
+            [
+              "Prompt Engineering",
+              "Zero-Shot / Few-Shot / CoT",
+              "System prompts for retrieval, synthesis, and prediction tools with structured reasoning"
+            ],
+            [
+              "Prompt Engineering",
+              "ReAct (Reason + Act)",
+              "Core agent pattern: Thought -> Action -> Observation loop with 7 tools"
+            ],
+            [
+              "LangChain Memory",
+              "ConversationBufferMemory",
+              "Persists full chat history across multi-turn conversations"
+            ],
+            [
+              "LangChain Memory",
+              "Prompt Templates",
+              "PromptTemplate & ChatPromptTemplate for all 7 tools with dynamic variable injection"
+            ],
+            [
+              "LangChain Chains",
+              "Sequential Chains",
+              "Two-stage prediction: gather_prompt | LLM -> predict_prompt | LLM"
+            ],
+            [
+              "LangChain Agents",
+              "Tool Orchestration",
+              "7 @tool-decorated functions, agent selects dynamically via ReAct reasoning"
+            ],
+            [
+              "RAG",
+              "Retrieval-Augmented Generation",
+              "FAISS vector store + create_retrieval_chain for grounded Q&A"
+            ]
+          ],
+          "position": {
+            "x": 40,
+            "y": 100
+          },
+          "size": {
+            "w": 880,
+            "h": 310
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#334155",
+            "headerBackground": "#2563eb",
+            "headerColor": "#ffffff",
+            "borderColor": "#e2e8f0",
+            "striped": true,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e5", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 430 }, "size": { "w": 840, "h": 65 },
-          "style": { "fill": "#f0fdf4", "stroke": "#86efac", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e5",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 430
+          },
+          "size": {
+            "w": 840,
+            "h": 65
+          },
+          "style": {
+            "fill": "#f0fdf4",
+            "stroke": "#86efac",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e6", "type": "text",
+          "id": "e6",
+          "type": "text",
           "content": "Every pipeline stage maps directly to a course module. The hackathon integrates **prompt engineering, memory, chains, agents, and RAG** into a single end-to-end system.",
-          "position": { "x": 80, "y": 438 }, "size": { "w": 800, "h": 50 },
-          "style": { "fontSize": 16, "color": "#166534", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+          "position": {
+            "x": 80,
+            "y": 438
+          },
+          "size": {
+            "w": 800,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 16,
+            "color": "#166534",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.4
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "fadeIn", "duration": 500 },
-        { "target": "e5", "trigger": "onClick", "effect": "slideInUp", "duration": 400 },
-        { "target": "e6", "trigger": "withPrevious", "effect": "fadeIn", "delay": 200, "duration": 400 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 500
+        },
+        {
+          "target": "e5",
+          "trigger": "onClick",
+          "effect": "slideInUp",
+          "duration": 400
+        },
+        {
+          "target": "e6",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 400
+        }
       ]
     },
     {
@@ -228,77 +782,267 @@
       "notes": "Now let's dive into specific implementations, starting with prompt templates and memory.\n\n[step:1]On the left you can see our prompt templates. We use 4 distinct templates throughout the system. The retrieval prompt uses ChatPromptTemplate with a system message that instructs the LLM to act as a World Cup expert and answer based only on retrieved context. The prediction prompt uses PromptTemplate with variables for team names, historical data, and user preferences. The agent prompt follows the ReAct format with tool descriptions and scratchpad.\n\nEach template uses dynamic variable injection. Variables like context, preferences, and agent_scratchpad are filled at runtime, making every query adaptive.[/step]\n\n[step:2]On the right, we have ConversationBufferMemory, which persists full chat history across turns using the memory_key parameter. We also maintain a user preferences dictionary that tracks the user's favorite team and preferred tournament. These preferences are auto-detected from natural language input using regex, and the agent is rebuilt with updated preferences each time.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Prompt Templates & Memory",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Prompt Templates & Memory",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "text", "content": "**Prompt Templates** (4 distinct templates)",
-          "position": { "x": 60, "y": 100 }, "size": { "w": 460, "h": 30 },
-          "style": { "fontSize": 20, "color": "#0f172a" }
+          "id": "e4",
+          "type": "text",
+          "content": "**Prompt Templates** (4 distinct templates)",
+          "position": {
+            "x": 60,
+            "y": 100
+          },
+          "size": {
+            "w": 460,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 20,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e5", "type": "code", "language": "python",
+          "id": "e5",
+          "type": "code",
+          "language": "python",
           "content": "# Retrieval prompt (ChatPromptTemplate)\nretrieval_prompt = ChatPromptTemplate.from_messages([\n    (\"system\", \"\"\"You are a World Cup expert.\n    Answer based on retrieved data:\\n{context}\"\"\"),\n    (\"human\", \"{input}\"),\n])\n\n# Prediction prompt (PromptTemplate)\ngather_prompt = PromptTemplate.from_template(\n    \"\"\"Analyze H2H and form data...\n    Team A: {team_a}  Team B: {team_b}\n    Historical Data: {historical_data}\n    User Preferences: {preferences}\"\"\")\n\n# Agent prompt with ReAct format\nreact_prompt = PromptTemplate.from_template(\n    \"\"\"...User preferences: {preferences}\n    Tools: {tools}  Tool names: {tool_names}\n    Question: {input}  {agent_scratchpad}\"\"\")",
-          "position": { "x": 60, "y": 135 }, "size": { "w": 500, "h": 340 },
-          "style": { "theme": "github-light", "fontSize": 12, "borderRadius": 8 }
+          "position": {
+            "x": 60,
+            "y": 135
+          },
+          "size": {
+            "w": 500,
+            "h": 340
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 11,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e6", "type": "text", "content": "**ConversationBufferMemory**",
-          "position": { "x": 580, "y": 100 }, "size": { "w": 350, "h": 30 },
-          "style": { "fontSize": 20, "color": "#0f172a" }
+          "id": "e6",
+          "type": "text",
+          "content": "**ConversationBufferMemory**",
+          "position": {
+            "x": 580,
+            "y": 100
+          },
+          "size": {
+            "w": 350,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 20,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e7", "type": "code", "language": "python",
+          "id": "e7",
+          "type": "code",
+          "language": "python",
           "content": "memory = ConversationBufferMemory(\n    memory_key=\"chat_history\",\n    return_messages=True\n)",
-          "position": { "x": 580, "y": 135 }, "size": { "w": 350, "h": 80 },
-          "style": { "theme": "github-light", "fontSize": 12, "borderRadius": 8 }
+          "position": {
+            "x": 583,
+            "y": 136
+          },
+          "size": {
+            "w": 352,
+            "h": 88
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 11,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e8", "type": "text",
+          "id": "e8",
+          "type": "text",
           "content": "Full chat history persisted across turns, injected into agent prompt via `memory_key`.\n\n**User Preference Persistence**",
-          "position": { "x": 580, "y": 225 }, "size": { "w": 350, "h": 70 },
-          "style": { "fontSize": 15, "color": "#475569", "lineHeight": 1.5 }
+          "position": {
+            "x": 580,
+            "y": 225
+          },
+          "size": {
+            "w": 350,
+            "h": 70
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#475569",
+            "lineHeight": 1.5
+          }
         },
         {
-          "id": "e9", "type": "code", "language": "python",
+          "id": "e9",
+          "type": "code",
+          "language": "python",
           "content": "user_preferences = {\n    \"favorite_team\": None,\n    \"preferred_tournament\":\n        \"FIFA World Cup\",\n}\n# Auto-detected via regex:\n# \"My favorite team is Brazil\"\n# -> updates dict + rebuilds\n#    agent with new prompt",
-          "position": { "x": 580, "y": 300 }, "size": { "w": 350, "h": 175 },
-          "style": { "theme": "github-light", "fontSize": 12, "borderRadius": 8 }
+          "position": {
+            "x": 580,
+            "y": 300
+          },
+          "size": {
+            "w": 350,
+            "h": 175
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 11,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e10", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 487 }, "size": { "w": 870, "h": 40 },
-          "style": { "fill": "#eff6ff", "stroke": "#bfdbfe", "strokeWidth": 1, "borderRadius": 6 }
+          "id": "e10",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 487
+          },
+          "size": {
+            "w": 870,
+            "h": 40
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#bfdbfe",
+            "strokeWidth": 1,
+            "borderRadius": 6
+          }
         },
         {
-          "id": "e11", "type": "text",
+          "id": "e11",
+          "type": "text",
           "content": "Templates use **dynamic variable injection** (`{context}`, `{preferences}`, `{agent_scratchpad}`) to adapt behavior per query",
-          "position": { "x": 75, "y": 492 }, "size": { "w": 840, "h": 30 },
-          "style": { "fontSize": 14, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle" }
+          "position": {
+            "x": 75,
+            "y": 492
+          },
+          "size": {
+            "w": 840,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "fadeIn", "duration": 300 },
-        { "target": "e5", "trigger": "afterPrevious", "effect": "slideInLeft", "duration": 400 },
-        { "target": "e6", "trigger": "onClick", "effect": "fadeIn", "duration": 300 },
-        { "target": "e7", "trigger": "afterPrevious", "effect": "slideInRight", "duration": 400 },
-        { "target": "e8", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 100, "duration": 300 },
-        { "target": "e9", "trigger": "afterPrevious", "effect": "slideInRight", "duration": 400 },
-        { "target": "e10", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 200, "duration": 300 },
-        { "target": "e11", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "afterPrevious",
+          "effect": "slideInLeft",
+          "duration": 400
+        },
+        {
+          "target": "e6",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e7",
+          "trigger": "afterPrevious",
+          "effect": "slideInRight",
+          "duration": 400
+        },
+        {
+          "target": "e8",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 100,
+          "duration": 300
+        },
+        {
+          "target": "e9",
+          "trigger": "afterPrevious",
+          "effect": "slideInRight",
+          "duration": 400
+        },
+        {
+          "target": "e10",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 300
+        },
+        {
+          "target": "e11",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        }
       ]
     },
     {
@@ -306,117 +1050,448 @@
       "notes": "Next, the RAG pipeline, which is the backbone of our retrieval system.\n\n[step:1]At the top you can see the four-stage flow. We start with CSVLoader, which reads 964 World Cup match rows as LangChain Documents. Then RecursiveCharacterTextSplitter chunks them at 500 characters with 50-character overlap. OpenAI Embeddings converts each chunk to a vector, and FAISS stores all 964 vectors for fast similarity search.[/step]\n\n[step:2]Here is the actual code. The key lines are the FAISS construction from documents and the retriever configured to return top-8 results. We then wire the retriever into a retrieval chain using create_retrieval_chain with a stuff_documents_chain.[/step]\n\n[step:3]Why RAG instead of direct prompting? The LLM has no built-in knowledge of specific World Cup scores. Without RAG, it would hallucinate results. By grounding every response in actual retrieved data, we get factually accurate answers. The flow is: embed the query, retrieve top-k documents, stuff them into the prompt context, and let the LLM generate a grounded answer.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Retrieval-Augmented Generation (RAG)",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Retrieval-Augmented Generation (RAG)",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "shape", "shape": "rectangle",
-          "position": { "x": 40, "y": 105 }, "size": { "w": 170, "h": 75 },
-          "style": { "fill": "#eff6ff", "stroke": "#93c5fd", "strokeWidth": 2, "borderRadius": 10 }
+          "id": "e4",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 40,
+            "y": 105
+          },
+          "size": {
+            "w": 170,
+            "h": 75
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#93c5fd",
+            "strokeWidth": 2,
+            "borderRadius": 10
+          }
         },
         {
-          "id": "e5", "type": "text", "content": "**CSVLoader**\n964 WC matches",
-          "position": { "x": 50, "y": 115 }, "size": { "w": 150, "h": 55 },
-          "style": { "fontSize": 13, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.3 }
+          "id": "e5",
+          "type": "text",
+          "content": "**CSVLoader**\n964 WC matches",
+          "position": {
+            "x": 50,
+            "y": 115
+          },
+          "size": {
+            "w": 150,
+            "h": 55
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.3
+          }
         },
         {
-          "id": "e6", "type": "shape", "shape": "arrow",
-          "position": { "x": 218, "y": 140 }, "size": { "w": 40, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+          "id": "e6",
+          "type": "shape",
+          "shape": "arrow",
+          "position": {
+            "x": 218,
+            "y": 140
+          },
+          "size": {
+            "w": 40,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e7", "type": "shape", "shape": "rectangle",
-          "position": { "x": 266, "y": 105 }, "size": { "w": 170, "h": 75 },
-          "style": { "fill": "#fef3c7", "stroke": "#fcd34d", "strokeWidth": 2, "borderRadius": 10 }
+          "id": "e7",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 266,
+            "y": 105
+          },
+          "size": {
+            "w": 170,
+            "h": 75
+          },
+          "style": {
+            "fill": "#fef3c7",
+            "stroke": "#fcd34d",
+            "strokeWidth": 2,
+            "borderRadius": 10
+          }
         },
         {
-          "id": "e8", "type": "text", "content": "**TextSplitter**\n500 chars, 50 overlap",
-          "position": { "x": 276, "y": 115 }, "size": { "w": 150, "h": 55 },
-          "style": { "fontSize": 13, "color": "#92400e", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.3 }
+          "id": "e8",
+          "type": "text",
+          "content": "**TextSplitter**\n500 chars, 50 overlap",
+          "position": {
+            "x": 276,
+            "y": 115
+          },
+          "size": {
+            "w": 150,
+            "h": 55
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#92400e",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.3
+          }
         },
         {
-          "id": "e9", "type": "shape", "shape": "arrow",
-          "position": { "x": 444, "y": 140 }, "size": { "w": 40, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+          "id": "e9",
+          "type": "shape",
+          "shape": "arrow",
+          "position": {
+            "x": 444,
+            "y": 140
+          },
+          "size": {
+            "w": 40,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e10", "type": "shape", "shape": "rectangle",
-          "position": { "x": 492, "y": 105 }, "size": { "w": 170, "h": 75 },
-          "style": { "fill": "#f0fdf4", "stroke": "#86efac", "strokeWidth": 2, "borderRadius": 10 }
+          "id": "e10",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 492,
+            "y": 105
+          },
+          "size": {
+            "w": 170,
+            "h": 75
+          },
+          "style": {
+            "fill": "#f0fdf4",
+            "stroke": "#86efac",
+            "strokeWidth": 2,
+            "borderRadius": 10
+          }
         },
         {
-          "id": "e11", "type": "text", "content": "**OpenAI\nEmbeddings**",
-          "position": { "x": 502, "y": 115 }, "size": { "w": 150, "h": 55 },
-          "style": { "fontSize": 13, "color": "#166534", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.3 }
+          "id": "e11",
+          "type": "text",
+          "content": "**OpenAI\nEmbeddings**",
+          "position": {
+            "x": 502,
+            "y": 115
+          },
+          "size": {
+            "w": 150,
+            "h": 55
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#166534",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.3
+          }
         },
         {
-          "id": "e12", "type": "shape", "shape": "arrow",
-          "position": { "x": 670, "y": 140 }, "size": { "w": 40, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+          "id": "e12",
+          "type": "shape",
+          "shape": "arrow",
+          "position": {
+            "x": 670,
+            "y": 140
+          },
+          "size": {
+            "w": 40,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e13", "type": "shape", "shape": "rectangle",
-          "position": { "x": 718, "y": 105 }, "size": { "w": 200, "h": 75 },
-          "style": { "fill": "#faf5ff", "stroke": "#d8b4fe", "strokeWidth": 2, "borderRadius": 10 }
+          "id": "e13",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 718,
+            "y": 105
+          },
+          "size": {
+            "w": 200,
+            "h": 75
+          },
+          "style": {
+            "fill": "#faf5ff",
+            "stroke": "#d8b4fe",
+            "strokeWidth": 2,
+            "borderRadius": 10
+          }
         },
         {
-          "id": "e14", "type": "text", "content": "**FAISS Vector Store**\n964 vectors, k=8",
-          "position": { "x": 728, "y": 115 }, "size": { "w": 180, "h": 55 },
-          "style": { "fontSize": 13, "color": "#7c3aed", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.3 }
+          "id": "e14",
+          "type": "text",
+          "content": "**FAISS Vector Store**\n964 vectors, k=8",
+          "position": {
+            "x": 728,
+            "y": 115
+          },
+          "size": {
+            "w": 180,
+            "h": 55
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#7c3aed",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.3
+          }
         },
         {
-          "id": "e15", "type": "code", "language": "python",
+          "id": "e15",
+          "type": "code",
+          "language": "python",
           "content": "# Build FAISS vector store from World Cup CSV\nloader = CSVLoader(file_path=wc_csv_path)\ndocuments = loader.load()                       # 964 docs\n\nsplitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)\nsplit_docs = splitter.split_documents(documents) # 964 chunks\n\nvectorstore = FAISS.from_documents(split_docs, OpenAIEmbeddings())\nretriever = vectorstore.as_retriever(search_kwargs={\"k\": 8})\n\n# Retrieval chain: retriever + stuff_documents_chain\ncombine_chain = create_stuff_documents_chain(llm, retrieval_prompt)\nretrieval_chain = create_retrieval_chain(retriever, combine_chain)",
-          "position": { "x": 60, "y": 200 }, "size": { "w": 580, "h": 274 },
-          "style": { "theme": "github-light", "fontSize": 13, "borderRadius": 8, "highlightLines": [7, 8, 12] }
+          "position": {
+            "x": 60,
+            "y": 200
+          },
+          "size": {
+            "w": 580,
+            "h": 274
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 13,
+            "borderRadius": 8,
+            "highlightLines": [
+              7,
+              8,
+              12
+            ]
+          }
         },
         {
-          "id": "e16", "type": "text",
+          "id": "e16",
+          "type": "text",
           "content": "**Why RAG over direct prompting?**\n\nThe LLM has no knowledge of specific World Cup match scores. RAG **grounds** responses in actual data rather than hallucinating statistics.\n\nThe retriever finds the **top-8 most relevant** match records for each query, which are then **stuffed** into the system prompt as context for the LLM to reason over.",
-          "position": { "x": 660, "y": 200 }, "size": { "w": 270, "h": 240 },
-          "style": { "fontSize": 15, "color": "#334155", "lineHeight": 1.6 }
+          "position": {
+            "x": 660,
+            "y": 200
+          },
+          "size": {
+            "w": 270,
+            "h": 240
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#334155",
+            "lineHeight": 1.6
+          }
         },
         {
-          "id": "e17", "type": "shape", "shape": "rectangle",
-          "position": { "x": 63, "y": 483 }, "size": { "w": 840, "h": 45 },
-          "style": { "fill": "#eff6ff", "stroke": "#bfdbfe", "strokeWidth": 1, "borderRadius": 6 }
+          "id": "e17",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 63,
+            "y": 483
+          },
+          "size": {
+            "w": 840,
+            "h": 45
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#bfdbfe",
+            "strokeWidth": 1,
+            "borderRadius": 6
+          }
         },
         {
-          "id": "e18", "type": "text",
+          "id": "e18",
+          "type": "text",
           "content": "Query -> **Embed** -> **Retrieve** top-k documents -> **Stuff** into prompt -> **LLM generates** grounded answer",
-          "position": { "x": 83, "y": 490 }, "size": { "w": 800, "h": 30 },
-          "style": { "fontSize": 15, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle" }
+          "position": {
+            "x": 83,
+            "y": 490
+          },
+          "size": {
+            "w": 800,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "scaleIn", "duration": 300 },
-        { "target": "e5", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e6", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 200 },
-        { "target": "e7", "trigger": "afterPrevious", "effect": "scaleIn", "duration": 300 },
-        { "target": "e8", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e9", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 200 },
-        { "target": "e10", "trigger": "afterPrevious", "effect": "scaleIn", "duration": 300 },
-        { "target": "e11", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e12", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 200 },
-        { "target": "e13", "trigger": "afterPrevious", "effect": "scaleIn", "duration": 300 },
-        { "target": "e14", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e15", "trigger": "onClick", "effect": "slideInUp", "duration": 400 },
-        { "target": "e16", "trigger": "onClick", "effect": "fadeIn", "duration": 400 },
-        { "target": "e17", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 200, "duration": 300 },
-        { "target": "e18", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e6",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 200
+        },
+        {
+          "target": "e7",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e8",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e9",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 200
+        },
+        {
+          "target": "e10",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e11",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e12",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 200
+        },
+        {
+          "target": "e13",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e14",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e15",
+          "trigger": "onClick",
+          "effect": "slideInUp",
+          "duration": 400
+        },
+        {
+          "target": "e16",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 400
+        },
+        {
+          "target": "e17",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 300
+        },
+        {
+          "target": "e18",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        }
       ]
     },
     {
@@ -424,67 +1499,234 @@
       "notes": "Now the heart of our system: the ReAct agent with tool orchestration.\n\n[step:1]The ReAct pattern, which we studied as an advanced prompting strategy, combines reasoning with acting. Here is an actual trace from our system. When the user asks about Brazil vs Germany head-to-head, the agent thinks, decides to use the analytics_tool, provides the input, receives the observation, then formulates the final answer. This loop can repeat up to 8 times per query. The agent autonomously decides which tool to use. There is no hardcoded if-else routing.[/step]\n\n[step:2]Below is our tool inventory. We defined 7 tools, each as a @tool-decorated Python function with a descriptive docstring. The agent reads these docstrings to decide when to use each tool. They cover the full pipeline from data discovery through report generation. Each tool maps to a distinct pipeline stage, just as the hackathon instructions required.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## ReAct Agent & Tool Orchestration",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## ReAct Agent & Tool Orchestration",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "text", "content": "**ReAct Pattern** (Reason + Act)",
-          "position": { "x": 60, "y": 98 }, "size": { "w": 500, "h": 30 },
-          "style": { "fontSize": 20, "color": "#0f172a" }
+          "id": "e4",
+          "type": "text",
+          "content": "**ReAct Pattern** (Reason + Act)",
+          "position": {
+            "x": 60,
+            "y": 98
+          },
+          "size": {
+            "w": 500,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 20,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e5", "type": "code", "language": "text",
+          "id": "e5",
+          "type": "code",
+          "language": "text",
           "content": "Question: Show Brazil vs Germany head-to-head\nThought:  I need to use analytics_tool for H2H data\nAction:   analytics_tool\nAction Input: \"Brazil vs Germany\"\nObservation: Head-to-Head: Brazil vs Germany...\n             Total matches: 2, Brazil wins: 1...\nThought:  I now know the final answer\nFinal Answer: Brazil and Germany have met 2 times\n              in the World Cup...",
-          "position": { "x": 59, "y": 126 }, "size": { "w": 516, "h": 158 },
-          "style": { "theme": "github-light", "fontSize": 10, "borderRadius": 8 }
+          "position": {
+            "x": 59,
+            "y": 126
+          },
+          "size": {
+            "w": 516,
+            "h": 158
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 10,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e6", "type": "text",
+          "id": "e6",
+          "type": "text",
           "content": "The agent **autonomously decides** which tool to invoke at each step. No hardcoded routing.\n\n`create_react_agent` builds the Thought -> Action -> Observation loop with up to **8 iterations** per query.",
-          "position": { "x": 600, "y": 133 }, "size": { "w": 330, "h": 120 },
-          "style": { "fontSize": 15, "color": "#475569", "lineHeight": 1.6 }
+          "position": {
+            "x": 600,
+            "y": 133
+          },
+          "size": {
+            "w": 330,
+            "h": 120
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#475569",
+            "lineHeight": 1.6
+          }
         },
         {
-          "id": "e7", "type": "text",
+          "id": "e7",
+          "type": "text",
           "content": "**7 Tools** (each a `@tool`-decorated function with docstring for agent reasoning)",
-          "position": { "x": 61, "y": 286 }, "size": { "w": 840, "h": 25 },
-          "style": { "fontSize": 17, "color": "#0f172a" }
+          "position": {
+            "x": 61,
+            "y": 286
+          },
+          "size": {
+            "w": 840,
+            "h": 25
+          },
+          "style": {
+            "fontSize": 17,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e8", "type": "table",
-          "columns": ["Tool", "Stage", "Technique"],
-          "rows": [
-            ["dataset_discovery_tool", "Discovery", "JSON metadata"],
-            ["data_ingestion_tool", "Ingestion", "pandas filter by team/year"],
-            ["retrieval_tool", "RAG Search", "FAISS + stuff_documents_chain"],
-            ["analytics_tool", "Analysis", "pandas H2H / form / top scorers"],
-            ["prediction_tool", "Prediction", "2-stage LLM chain"],
-            ["llm_synthesis_tool", "Synthesis", "RAG + synthesis prompt"],
-            ["report_generation_tool", "Reporting", "RAG + analytics + report prompt"]
+          "id": "e8",
+          "type": "table",
+          "columns": [
+            "Tool",
+            "Stage",
+            "Technique"
           ],
-          "position": { "x": 61, "y": 314 }, "size": { "w": 811, "h": 207 },
-          "style": { "fontSize": 9, "color": "#334155", "headerBackground": "#2563eb", "headerColor": "#ffffff", "borderColor": "#e2e8f0", "striped": true, "borderRadius": 6 }
+          "rows": [
+            [
+              "dataset_discovery_tool",
+              "Discovery",
+              "JSON metadata"
+            ],
+            [
+              "data_ingestion_tool",
+              "Ingestion",
+              "pandas filter by team/year"
+            ],
+            [
+              "retrieval_tool",
+              "RAG Search",
+              "FAISS + stuff_documents_chain"
+            ],
+            [
+              "analytics_tool",
+              "Analysis",
+              "pandas H2H / form / top scorers"
+            ],
+            [
+              "prediction_tool",
+              "Prediction",
+              "2-stage LLM chain"
+            ],
+            [
+              "llm_synthesis_tool",
+              "Synthesis",
+              "RAG + synthesis prompt"
+            ],
+            [
+              "report_generation_tool",
+              "Reporting",
+              "RAG + analytics + report prompt"
+            ]
+          ],
+          "position": {
+            "x": 61,
+            "y": 314
+          },
+          "size": {
+            "w": 811,
+            "h": 207
+          },
+          "style": {
+            "fontSize": 9,
+            "color": "#334155",
+            "headerBackground": "#2563eb",
+            "headerColor": "#ffffff",
+            "borderColor": "#e2e8f0",
+            "striped": true,
+            "borderRadius": 6
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "fadeIn", "duration": 300 },
-        { "target": "e5", "trigger": "afterPrevious", "effect": "slideInLeft", "duration": 400 },
-        { "target": "e6", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 400 },
-        { "target": "e7", "trigger": "onClick", "effect": "fadeIn", "duration": 300 },
-        { "target": "e8", "trigger": "afterPrevious", "effect": "slideInUp", "duration": 400 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "afterPrevious",
+          "effect": "slideInLeft",
+          "duration": 400
+        },
+        {
+          "target": "e6",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 400
+        },
+        {
+          "target": "e7",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e8",
+          "trigger": "afterPrevious",
+          "effect": "slideInUp",
+          "duration": 400
+        }
       ]
     },
     {
@@ -492,106 +1734,398 @@
       "notes": "The prediction pipeline demonstrates multi-step LangChain chains.\n\n[step:1]The flow goes from left to right. The user provides two team names along with their preferences. Stage 1 is the gather chain, which uses a gather_prompt piped through the LLM to analyze head-to-head records and form data. Stage 2 is the predict chain, which takes those gathered factors and generates a predicted score, winner, and confidence level.[/step]\n\n[step:2]Here is the code. Notice the LCEL pipe syntax, which is LangChain Expression Language. The pipe operator chains PromptTemplate, ChatModel, and OutputParser together. Stage 1's output, the factors, feeds directly into Stage 2 as the input variable, creating a sequential reasoning chain where each step builds on the previous.\n\nWe use 3 different LLM instances with different temperature settings: 0.0 for the agent to be deterministic, 0.3 for synthesis to be slightly creative, and 0.2 for prediction to balance accuracy with reasoning.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Multi-Step LLM Chains: Prediction",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Multi-Step LLM Chains: Prediction",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 108 }, "size": { "w": 200, "h": 90 },
-          "style": { "fill": "#eff6ff", "stroke": "#93c5fd", "strokeWidth": 2, "borderRadius": 12 }
+          "id": "e4",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 108
+          },
+          "size": {
+            "w": 200,
+            "h": 90
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#93c5fd",
+            "strokeWidth": 2,
+            "borderRadius": 12
+          }
         },
         {
-          "id": "e5", "type": "text", "content": "**Input**\nTwo team names\n+ user preferences",
-          "position": { "x": 70, "y": 118 }, "size": { "w": 180, "h": 70 },
-          "style": { "fontSize": 13, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+          "id": "e5",
+          "type": "text",
+          "content": "**Input**\nTwo team names\n+ user preferences",
+          "position": {
+            "x": 70,
+            "y": 118
+          },
+          "size": {
+            "w": 180,
+            "h": 70
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.4
+          }
         },
         {
-          "id": "e6", "type": "shape", "shape": "arrow",
-          "position": { "x": 270, "y": 150 }, "size": { "w": 50, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+          "id": "e6",
+          "type": "shape",
+          "shape": "arrow",
+          "position": {
+            "x": 270,
+            "y": 150
+          },
+          "size": {
+            "w": 50,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e7", "type": "shape", "shape": "rectangle",
-          "position": { "x": 330, "y": 108 }, "size": { "w": 260, "h": 90 },
-          "style": { "fill": "#fef3c7", "stroke": "#fcd34d", "strokeWidth": 2, "borderRadius": 12 }
+          "id": "e7",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 330,
+            "y": 108
+          },
+          "size": {
+            "w": 260,
+            "h": 90
+          },
+          "style": {
+            "fill": "#fef3c7",
+            "stroke": "#fcd34d",
+            "strokeWidth": 2,
+            "borderRadius": 12
+          }
         },
         {
-          "id": "e8", "type": "text", "content": "**Stage 1: Gather Factors**\n`gather_prompt | LLM`\nAnalyze H2H + form data",
-          "position": { "x": 340, "y": 118 }, "size": { "w": 240, "h": 70 },
-          "style": { "fontSize": 13, "color": "#92400e", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+          "id": "e8",
+          "type": "text",
+          "content": "**Stage 1: Gather Factors**\n`gather_prompt | LLM`\nAnalyze H2H + form data",
+          "position": {
+            "x": 340,
+            "y": 118
+          },
+          "size": {
+            "w": 240,
+            "h": 70
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#92400e",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.4
+          }
         },
         {
-          "id": "e9", "type": "shape", "shape": "arrow",
-          "position": { "x": 600, "y": 150 }, "size": { "w": 50, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+          "id": "e9",
+          "type": "shape",
+          "shape": "arrow",
+          "position": {
+            "x": 600,
+            "y": 150
+          },
+          "size": {
+            "w": 50,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e10", "type": "shape", "shape": "rectangle",
-          "position": { "x": 660, "y": 108 }, "size": { "w": 260, "h": 90 },
-          "style": { "fill": "#f0fdf4", "stroke": "#86efac", "strokeWidth": 2, "borderRadius": 12 }
+          "id": "e10",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 660,
+            "y": 108
+          },
+          "size": {
+            "w": 260,
+            "h": 90
+          },
+          "style": {
+            "fill": "#f0fdf4",
+            "stroke": "#86efac",
+            "strokeWidth": 2,
+            "borderRadius": 12
+          }
         },
         {
-          "id": "e11", "type": "text", "content": "**Stage 2: Predict**\n`predict_prompt | LLM`\nScore, winner, confidence",
-          "position": { "x": 670, "y": 118 }, "size": { "w": 240, "h": 70 },
-          "style": { "fontSize": 13, "color": "#166534", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+          "id": "e11",
+          "type": "text",
+          "content": "**Stage 2: Predict**\n`predict_prompt | LLM`\nScore, winner, confidence",
+          "position": {
+            "x": 670,
+            "y": 118
+          },
+          "size": {
+            "w": 240,
+            "h": 70
+          },
+          "style": {
+            "fontSize": 13,
+            "color": "#166534",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.4
+          }
         },
         {
-          "id": "e12", "type": "code", "language": "python",
+          "id": "e12",
+          "type": "code",
+          "language": "python",
           "content": "# LCEL pipe syntax: prompt | llm | parser\ngather_chain = gather_prompt | llm_prediction | StrOutputParser()\nfactors = gather_chain.invoke({\n    \"team_a\": team_a, \"team_b\": team_b,\n    \"historical_data\": analytics_tool.invoke(query),\n    \"preferences\": get_preferences_context(),\n})\n\npredict_chain = predict_prompt | llm_prediction | StrOutputParser()\nprediction = predict_chain.invoke({\"factors\": factors})",
-          "position": { "x": 60, "y": 220 }, "size": { "w": 540, "h": 200 },
-          "style": { "theme": "github-light", "fontSize": 11, "borderRadius": 8, "highlightLines": [2, 9] }
+          "position": {
+            "x": 60,
+            "y": 220
+          },
+          "size": {
+            "w": 540,
+            "h": 200
+          },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 11,
+            "borderRadius": 8,
+            "highlightLines": [
+              2,
+              9
+            ]
+          }
         },
         {
-          "id": "e13", "type": "text",
+          "id": "e13",
+          "type": "text",
           "content": "**LCEL Pipe Syntax**\n\nLangChain Expression Language chains components with `|` operator:\n\n`PromptTemplate | ChatModel | OutputParser`\n\nStage 1 output feeds directly into Stage 2 as `{factors}`, creating a **sequential reasoning chain** where each step builds on the previous.",
-          "position": { "x": 620, "y": 220 }, "size": { "w": 310, "h": 200 },
-          "style": { "fontSize": 15, "color": "#334155", "lineHeight": 1.6 }
+          "position": {
+            "x": 620,
+            "y": 220
+          },
+          "size": {
+            "w": 310,
+            "h": 200
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#334155",
+            "lineHeight": 1.6
+          }
         },
         {
-          "id": "e14", "type": "text",
+          "id": "e14",
+          "type": "text",
           "content": "**3 LLM instances** with different temperatures: Agent (0.0, deterministic) | Synthesis (0.3, creative) | Prediction (0.2, balanced)",
-          "position": { "x": 60, "y": 440 }, "size": { "w": 840, "h": 30 },
-          "style": { "fontSize": 14, "color": "#64748b", "textAlign": "center" }
+          "position": {
+            "x": 60,
+            "y": 440
+          },
+          "size": {
+            "w": 840,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#64748b",
+            "textAlign": "center"
+          }
         },
         {
-          "id": "e15", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 478 }, "size": { "w": 840, "h": 45 },
-          "style": { "fill": "#eff6ff", "stroke": "#bfdbfe", "strokeWidth": 1, "borderRadius": 6 }
+          "id": "e15",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 478
+          },
+          "size": {
+            "w": 840,
+            "h": 45
+          },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#bfdbfe",
+            "strokeWidth": 1,
+            "borderRadius": 6
+          }
         },
         {
-          "id": "e16", "type": "text",
+          "id": "e16",
+          "type": "text",
           "content": "**Output:** Predicted score, winner, 3 key reasons, confidence level (Low/Medium/High), and limitation caveat",
-          "position": { "x": 80, "y": 485 }, "size": { "w": 800, "h": 30 },
-          "style": { "fontSize": 14, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle" }
+          "position": {
+            "x": 80,
+            "y": 485
+          },
+          "size": {
+            "w": 800,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle"
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "scaleIn", "duration": 300 },
-        { "target": "e5", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e6", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 200 },
-        { "target": "e7", "trigger": "afterPrevious", "effect": "scaleIn", "duration": 300 },
-        { "target": "e8", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e9", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 200 },
-        { "target": "e10", "trigger": "afterPrevious", "effect": "scaleIn", "duration": 300 },
-        { "target": "e11", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e12", "trigger": "onClick", "effect": "slideInUp", "duration": 400 },
-        { "target": "e13", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 400 },
-        { "target": "e14", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 200, "duration": 300 },
-        { "target": "e15", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 100, "duration": 300 },
-        { "target": "e16", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e6",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 200
+        },
+        {
+          "target": "e7",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e8",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e9",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 200
+        },
+        {
+          "target": "e10",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "duration": 300
+        },
+        {
+          "target": "e11",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e12",
+          "trigger": "onClick",
+          "effect": "slideInUp",
+          "duration": 400
+        },
+        {
+          "target": "e13",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 400
+        },
+        {
+          "target": "e14",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 300
+        },
+        {
+          "target": "e15",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 100,
+          "duration": 300
+        },
+        {
+          "target": "e16",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        }
       ]
     },
     {
@@ -599,55 +2133,189 @@
       "notes": "Here are our results and the demo interface.\n\n[step:1]These are some of the visualizations our system generates. The top-left shows the Brazil vs Germany head-to-head comparison with a pie chart and cumulative wins timeline. The top-right shows World Cup titles by country. And the bottom-left is our all-time top 15 scorers chart with penalty breakdown.[/step]\n\n[step:2]On the right, we built a Gradio UI with three tabs. The Chat tab provides a conversational interface with five example queries. The Preferences tab lets users set their favorite team and tournament. And the Visualizations tab offers five interactive chart generators. All five pipeline tests passed successfully: setting preferences, RAG-based Q&A, head-to-head analysis, match prediction, and report generation. At the bottom is the Brazil tournament heatmap showing their performance across every World Cup.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Results & Demo",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Results & Demo",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "image", "src": "./assets/h2h_Brazil_Germany.png",
-          "position": { "x": 30, "y": 95 }, "size": { "w": 450, "h": 170 },
-          "style": { "objectFit": "contain", "borderRadius": 6 }
+          "id": "e4",
+          "type": "image",
+          "src": "./assets/h2h_Brazil_Germany.png",
+          "position": {
+            "x": 30,
+            "y": 95
+          },
+          "size": {
+            "w": 450,
+            "h": 170
+          },
+          "style": {
+            "objectFit": "contain",
+            "borderRadius": 6
+          }
         },
         {
-          "id": "e5", "type": "image", "src": "./assets/wc_champions.png",
-          "position": { "x": 490, "y": 95 }, "size": { "w": 450, "h": 170 },
-          "style": { "objectFit": "contain", "borderRadius": 6 }
+          "id": "e5",
+          "type": "image",
+          "src": "./assets/wc_champions.png",
+          "position": {
+            "x": 490,
+            "y": 95
+          },
+          "size": {
+            "w": 450,
+            "h": 170
+          },
+          "style": {
+            "objectFit": "contain",
+            "borderRadius": 6
+          }
         },
         {
-          "id": "e6", "type": "image", "src": "./assets/top_scorers.png",
-          "position": { "x": 30, "y": 270 }, "size": { "w": 450, "h": 150 },
-          "style": { "objectFit": "contain", "borderRadius": 6 }
+          "id": "e6",
+          "type": "image",
+          "src": "./assets/top_scorers.png",
+          "position": {
+            "x": 30,
+            "y": 270
+          },
+          "size": {
+            "w": 450,
+            "h": 150
+          },
+          "style": {
+            "objectFit": "contain",
+            "borderRadius": 6
+          }
         },
         {
-          "id": "e7", "type": "text",
+          "id": "e7",
+          "type": "text",
           "content": "**Gradio UI** (3 tabs)\n\n**Chat:** Conversational agent interface with 5 example queries\n\n**Preferences:** Favorite team + tournament dropdowns, auto-detected from natural language\n\n**Visualizations:** 5 interactive charts (H2H, form, champions, heatmap, scorers)\n\n**5 pipeline tests passed:** preference -> RAG Q&A -> H2H -> prediction -> report",
-          "position": { "x": 500, "y": 270 }, "size": { "w": 430, "h": 200 },
-          "style": { "fontSize": 14, "color": "#334155", "lineHeight": 1.7 }
+          "position": {
+            "x": 500,
+            "y": 270
+          },
+          "size": {
+            "w": 430,
+            "h": 200
+          },
+          "style": {
+            "fontSize": 14,
+            "color": "#334155",
+            "lineHeight": 1.7
+          }
         },
         {
-          "id": "e8", "type": "image", "src": "./assets/heatmap_Brazil.png",
-          "position": { "x": 30, "y": 435 }, "size": { "w": 900, "h": 90 },
-          "style": { "objectFit": "contain", "borderRadius": 6 }
+          "id": "e8",
+          "type": "image",
+          "src": "./assets/heatmap_Brazil.png",
+          "position": {
+            "x": 30,
+            "y": 435
+          },
+          "size": {
+            "w": 900,
+            "h": 90
+          },
+          "style": {
+            "objectFit": "contain",
+            "borderRadius": 6
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "scaleIn", "duration": 400 },
-        { "target": "e5", "trigger": "afterPrevious", "effect": "scaleIn", "delay": 100, "duration": 400 },
-        { "target": "e6", "trigger": "afterPrevious", "effect": "scaleIn", "delay": 100, "duration": 400 },
-        { "target": "e7", "trigger": "onClick", "effect": "slideInRight", "duration": 400 },
-        { "target": "e8", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 200, "duration": 400 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "scaleIn",
+          "duration": 400
+        },
+        {
+          "target": "e5",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "delay": 100,
+          "duration": 400
+        },
+        {
+          "target": "e6",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "delay": 100,
+          "duration": 400
+        },
+        {
+          "target": "e7",
+          "trigger": "onClick",
+          "effect": "slideInRight",
+          "duration": 400
+        },
+        {
+          "target": "e8",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 400
+        }
       ]
     },
     {
@@ -655,64 +2323,218 @@
       "notes": "Before we close, responsible AI considerations.\n\n[step:1]First and foremost, this application is for educational purposes only. It is not professional sports analytics and should not be used for gambling.\n\nOn the left, our key limitations: the dataset only goes up to the 2022 World Cup with no live data, the LLM uses statistical patterns rather than causal reasoning about real factors like injuries or tactics, and confidence levels are just the model's self-assessment.\n\nOn the right, transparency: we use verbose agent output so all reasoning steps are visible. The dataset is fully public and open-licensed, and everything is cached locally for reproducibility.[/step]\n\n[step:2]The key takeaway is that RAG grounds the LLM in real data, reducing hallucination risk, and the verbose ReAct output makes every decision transparent and auditable.[/step]",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 6 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 6
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "## Responsible AI & Limitations",
-          "position": { "x": 60, "y": 30 }, "size": { "w": 840, "h": 50 },
-          "style": { "fontSize": 32, "color": "#0f172a" }
+          "id": "e2",
+          "type": "text",
+          "content": "## Responsible AI & Limitations",
+          "position": {
+            "x": 60,
+            "y": 30
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fontSize": 32,
+            "color": "#0f172a"
+          }
         },
         {
-          "id": "e3", "type": "shape", "shape": "line",
-          "position": { "x": 60, "y": 85 }, "size": { "w": 120, "h": 4 },
-          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 60,
+            "y": 85
+          },
+          "size": {
+            "w": 120,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#2563eb",
+            "strokeWidth": 3
+          }
         },
         {
-          "id": "e4", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 105 }, "size": { "w": 840, "h": 50 },
-          "style": { "fill": "#fef2f2", "stroke": "#fecaca", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e4",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 105
+          },
+          "size": {
+            "w": 840,
+            "h": 50
+          },
+          "style": {
+            "fill": "#fef2f2",
+            "stroke": "#fecaca",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e5", "type": "text",
+          "id": "e5",
+          "type": "text",
           "content": "**Educational purposes only.** Not professional sports analytics advice. Not for gambling.",
-          "position": { "x": 80, "y": 112 }, "size": { "w": 800, "h": 35 },
-          "style": { "fontSize": 16, "color": "#991b1b", "verticalAlign": "middle" }
+          "position": {
+            "x": 80,
+            "y": 112
+          },
+          "size": {
+            "w": 800,
+            "h": 35
+          },
+          "style": {
+            "fontSize": 16,
+            "color": "#991b1b",
+            "verticalAlign": "middle"
+          }
         },
         {
-          "id": "e6", "type": "text",
+          "id": "e6",
+          "type": "text",
           "content": "**Limitations**\n\n- **Historical data only** — dataset ends at 2022 World Cup, no live data\n- **No causal reasoning** — LLM uses statistical patterns, not real-world factors (injuries, tactics, weather)\n- **Prediction uncertainty** — confidence levels are model self-assessment, not statistical confidence\n- **LLM bias** — may reflect biases in training data or historical record",
-          "position": { "x": 60, "y": 175 }, "size": { "w": 420, "h": 200 },
-          "style": { "fontSize": 15, "color": "#475569", "lineHeight": 1.7 }
+          "position": {
+            "x": 60,
+            "y": 175
+          },
+          "size": {
+            "w": 420,
+            "h": 200
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#475569",
+            "lineHeight": 1.7
+          }
         },
         {
-          "id": "e7", "type": "text",
+          "id": "e7",
+          "type": "text",
           "content": "**Transparency**\n\n- GPT-3.5-turbo via LangChain with **verbose agent output** — all reasoning steps visible\n- Public dataset: martj42/international_results (open license)\n- All data cached locally for **full reproducibility**\n- Every tool call, retrieval, and generation step is logged and traceable",
-          "position": { "x": 500, "y": 175 }, "size": { "w": 420, "h": 200 },
-          "style": { "fontSize": 15, "color": "#475569", "lineHeight": 1.7 }
+          "position": {
+            "x": 500,
+            "y": 175
+          },
+          "size": {
+            "w": 420,
+            "h": 200
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#475569",
+            "lineHeight": 1.7
+          }
         },
         {
-          "id": "e8", "type": "shape", "shape": "rectangle",
-          "position": { "x": 60, "y": 400 }, "size": { "w": 840, "h": 80 },
-          "style": { "fill": "#f8fafc", "stroke": "#e2e8f0", "strokeWidth": 1, "borderRadius": 8 }
+          "id": "e8",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 60,
+            "y": 400
+          },
+          "size": {
+            "w": 840,
+            "h": 80
+          },
+          "style": {
+            "fill": "#f8fafc",
+            "stroke": "#e2e8f0",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
         },
         {
-          "id": "e9", "type": "text",
+          "id": "e9",
+          "type": "text",
           "content": "**Key Takeaway:** RAG grounds the LLM in real data, reducing hallucination risk. The verbose ReAct agent output makes every decision transparent and auditable — the user can see *why* the agent chose each tool and *what* data informed the answer.",
-          "position": { "x": 80, "y": 410 }, "size": { "w": 800, "h": 60 },
-          "style": { "fontSize": 15, "color": "#334155", "verticalAlign": "middle", "lineHeight": 1.5 }
+          "position": {
+            "x": 80,
+            "y": 410
+          },
+          "size": {
+            "w": 800,
+            "h": 60
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#334155",
+            "verticalAlign": "middle",
+            "lineHeight": 1.5
+          }
         }
       ],
       "animations": [
-        { "target": "e2", "trigger": "onEnter", "effect": "fadeIn", "duration": 300 },
-        { "target": "e3", "trigger": "withPrevious", "effect": "slideInLeft", "duration": 300 },
-        { "target": "e4", "trigger": "onClick", "effect": "fadeIn", "duration": 300 },
-        { "target": "e5", "trigger": "withPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e6", "trigger": "afterPrevious", "effect": "slideInLeft", "duration": 400 },
-        { "target": "e7", "trigger": "afterPrevious", "effect": "slideInRight", "duration": 400 },
-        { "target": "e8", "trigger": "onClick", "effect": "fadeIn", "duration": 400 },
-        { "target": "e9", "trigger": "withPrevious", "effect": "fadeIn", "delay": 200, "duration": 400 }
+        {
+          "target": "e2",
+          "trigger": "onEnter",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e3",
+          "trigger": "withPrevious",
+          "effect": "slideInLeft",
+          "duration": 300
+        },
+        {
+          "target": "e4",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e6",
+          "trigger": "afterPrevious",
+          "effect": "slideInLeft",
+          "duration": 400
+        },
+        {
+          "target": "e7",
+          "trigger": "afterPrevious",
+          "effect": "slideInRight",
+          "duration": 400
+        },
+        {
+          "target": "e8",
+          "trigger": "onClick",
+          "effect": "fadeIn",
+          "duration": 400
+        },
+        {
+          "target": "e9",
+          "trigger": "withPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 400
+        }
       ]
     },
     {
@@ -720,45 +2542,151 @@
       "notes": "Thank you for listening. We are happy to take any questions about the architecture, the tools, or anything else about our implementation.",
       "elements": [
         {
-          "id": "e1", "type": "shape", "shape": "rectangle",
-          "position": { "x": 0, "y": 0 }, "size": { "w": 960, "h": 8 },
-          "style": { "fill": "#2563eb", "stroke": "transparent" }
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "size": {
+            "w": 960,
+            "h": 8
+          },
+          "style": {
+            "fill": "#2563eb",
+            "stroke": "transparent"
+          }
         },
         {
-          "id": "e2", "type": "text", "content": "# Thank You",
-          "position": { "x": 80, "y": 140 }, "size": { "w": 800, "h": 80 },
-          "style": { "fontSize": 48, "color": "#0f172a", "textAlign": "center" }
+          "id": "e2",
+          "type": "text",
+          "content": "# Thank You",
+          "position": {
+            "x": 80,
+            "y": 140
+          },
+          "size": {
+            "w": 800,
+            "h": 80
+          },
+          "style": {
+            "fontSize": 48,
+            "color": "#0f172a",
+            "textAlign": "center"
+          }
         },
         {
-          "id": "e3", "type": "text",
+          "id": "e3",
+          "type": "text",
           "content": "World Cup Match Predictor & Analyst Chatbot",
-          "position": { "x": 180, "y": 230 }, "size": { "w": 600, "h": 40 },
-          "style": { "fontSize": 22, "color": "#2563eb", "textAlign": "center" }
+          "position": {
+            "x": 180,
+            "y": 230
+          },
+          "size": {
+            "w": 600,
+            "h": 40
+          },
+          "style": {
+            "fontSize": 22,
+            "color": "#2563eb",
+            "textAlign": "center"
+          }
         },
         {
-          "id": "e4", "type": "shape", "shape": "line",
-          "position": { "x": 300, "y": 290 }, "size": { "w": 360, "h": 4 },
-          "style": { "stroke": "#e2e8f0", "strokeWidth": 2 }
+          "id": "e4",
+          "type": "shape",
+          "shape": "line",
+          "position": {
+            "x": 300,
+            "y": 290
+          },
+          "size": {
+            "w": 360,
+            "h": 4
+          },
+          "style": {
+            "stroke": "#e2e8f0",
+            "strokeWidth": 2
+          }
         },
         {
-          "id": "e5", "type": "text", "content": "**Questions?**",
-          "position": { "x": 350, "y": 310 }, "size": { "w": 260, "h": 40 },
-          "style": { "fontSize": 24, "color": "#64748b", "textAlign": "center" }
+          "id": "e5",
+          "type": "text",
+          "content": "**Questions?**",
+          "position": {
+            "x": 350,
+            "y": 310
+          },
+          "size": {
+            "w": 260,
+            "h": 40
+          },
+          "style": {
+            "fontSize": 24,
+            "color": "#64748b",
+            "textAlign": "center"
+          }
         },
         {
-          "id": "e6", "type": "text",
+          "id": "e6",
+          "type": "text",
           "content": "IE5374 Applied Generative AI | Northeastern University",
-          "position": { "x": 200, "y": 420 }, "size": { "w": 560, "h": 30 },
-          "style": { "fontSize": 15, "color": "#94a3b8", "textAlign": "center" }
+          "position": {
+            "x": 200,
+            "y": 420
+          },
+          "size": {
+            "w": 560,
+            "h": 30
+          },
+          "style": {
+            "fontSize": 15,
+            "color": "#94a3b8",
+            "textAlign": "center"
+          }
         }
       ],
       "animations": [
-        { "target": "e1", "trigger": "onEnter", "effect": "slideInLeft", "duration": 400 },
-        { "target": "e2", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 500 },
-        { "target": "e3", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 200, "duration": 400 },
-        { "target": "e4", "trigger": "afterPrevious", "effect": "fadeIn", "duration": 300 },
-        { "target": "e5", "trigger": "afterPrevious", "effect": "scaleIn", "duration": 400 },
-        { "target": "e6", "trigger": "afterPrevious", "effect": "fadeIn", "delay": 300, "duration": 300 }
+        {
+          "target": "e1",
+          "trigger": "onEnter",
+          "effect": "slideInLeft",
+          "duration": 400
+        },
+        {
+          "target": "e2",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 500
+        },
+        {
+          "target": "e3",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 200,
+          "duration": 400
+        },
+        {
+          "target": "e4",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "duration": 300
+        },
+        {
+          "target": "e5",
+          "trigger": "afterPrevious",
+          "effect": "scaleIn",
+          "duration": 400
+        },
+        {
+          "target": "e6",
+          "trigger": "afterPrevious",
+          "effect": "fadeIn",
+          "delay": 300,
+          "duration": 300
+        }
       ]
     }
   ]
