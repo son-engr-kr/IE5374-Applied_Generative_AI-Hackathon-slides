@@ -1,45 +1,1051 @@
 {
   "deckode": "0.1.0",
   "meta": {
-    "title": "Untitled Presentation",
+    "title": "World Cup Match Predictor & Analyst Chatbot",
+    "author": "IE5374 Hackathon",
     "aspectRatio": "16:9"
   },
   "theme": {
     "slide": {
-      "background": {
-        "color": "#0f172a"
-      }
+      "background": { "color": "#ffffff" }
     },
     "text": {
       "fontFamily": "Inter, system-ui, sans-serif",
       "fontSize": 24,
-      "color": "#ffffff"
+      "color": "#1e293b"
     },
     "code": {
-      "theme": "github-dark",
-      "fontSize": 16
+      "theme": "github-light",
+      "fontSize": 14
     },
     "shape": {
-      "stroke": "#ffffff",
+      "stroke": "#cbd5e1",
       "strokeWidth": 1
     },
     "image": {
       "objectFit": "contain"
     },
-    "video": {
-      "objectFit": "contain"
-    },
-    "tikz": {
-      "backgroundColor": "#1e1e2e"
+    "table": {
+      "headerBackground": "#2563eb",
+      "borderColor": "#e2e8f0"
     }
   },
   "slides": [
     {
       "id": "s1",
-      "background": {
-        "color": "#0f172a"
-      },
-      "elements": []
+      "notes": "Title slide - introduce the project",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 8 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "# World Cup Match Predictor\n# & Analyst Chatbot",
+          "position": { "x": 80, "y": 120 },
+          "size": { "w": 800, "h": 160 },
+          "style": {
+            "fontSize": 44,
+            "color": "#0f172a",
+            "textAlign": "center",
+            "lineHeight": 1.3
+          }
+        },
+        {
+          "id": "e3",
+          "type": "text",
+          "content": "**Track 1** | LangChain RAG Pipeline with ReAct Agent",
+          "position": { "x": 180, "y": 300 },
+          "size": { "w": 600, "h": 40 },
+          "style": {
+            "fontSize": 22,
+            "color": "#2563eb",
+            "textAlign": "center"
+          }
+        },
+        {
+          "id": "e4",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 280, "y": 360 },
+          "size": { "w": 400, "h": 4 },
+          "style": { "stroke": "#e2e8f0", "strokeWidth": 2 }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "IE5374 Applied Generative AI Hackathon",
+          "position": { "x": 200, "y": 380 },
+          "size": { "w": 560, "h": 40 },
+          "style": {
+            "fontSize": 18,
+            "color": "#64748b",
+            "textAlign": "center"
+          }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "Prof. Dehghani | Northeastern University | March 2026",
+          "position": { "x": 200, "y": 420 },
+          "size": { "w": 560, "h": 30 },
+          "style": {
+            "fontSize": 15,
+            "color": "#94a3b8",
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "notes": "Agenda overview",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Agenda",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "text",
+          "content": "**1.**  Problem Statement & Approach\n\n**2.**  System Architecture\n\n**3.**  Data Source & Ingestion\n\n**4.**  RAG Pipeline & Vector Store\n\n**5.**  7 Agent Tools & ReAct Agent\n\n**6.**  Two-Stage Match Prediction\n\n**7.**  Visualizations & Innovation\n\n**8.**  Gradio UI Demo\n\n**9.**  Responsible AI & Limitations",
+          "position": { "x": 100, "y": 110 },
+          "size": { "w": 760, "h": 400 },
+          "style": {
+            "fontSize": 20,
+            "color": "#334155",
+            "lineHeight": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "notes": "Problem statement and our approach",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Problem & Approach",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "text",
+          "content": "**Goal**\n\nBuild a conversational chatbot that lets users ask questions about World Cup history, team stats, and match predictions using a LangChain-powered RAG pipeline.",
+          "position": { "x": 60, "y": 100 },
+          "size": { "w": 420, "h": 160 },
+          "style": { "fontSize": 18, "color": "#334155", "lineHeight": 1.6 }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "**Core Requirements Met**\n\n- LangChain ReAct agent with 7 tools\n- Prompt templates with memory persistence\n- FAISS vector store for RAG retrieval\n- Public dataset with full reproducibility\n- Two-stage LLM prediction chain\n- Interactive Gradio UI",
+          "position": { "x": 500, "y": 100 },
+          "size": { "w": 420, "h": 200 },
+          "style": { "fontSize": 17, "color": "#334155", "lineHeight": 1.6 }
+        },
+        {
+          "id": "e6",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 60, "y": 310 },
+          "size": { "w": 840, "h": 90 },
+          "style": {
+            "fill": "#eff6ff",
+            "stroke": "#bfdbfe",
+            "strokeWidth": 1,
+            "borderRadius": 8
+          }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "**Pipeline Steps:**  Ingest CSV dataset  ->  Store in FAISS vector DB  ->  RAG-based Q&A  ->  Head-to-head prediction with two-stage LLM chain",
+          "position": { "x": 80, "y": 320 },
+          "size": { "w": 800, "h": 70 },
+          "style": {
+            "fontSize": 16,
+            "color": "#1e40af",
+            "textAlign": "center",
+            "verticalAlign": "middle",
+            "lineHeight": 1.5
+          }
+        },
+        {
+          "id": "e8",
+          "type": "text",
+          "content": "**Data:** 49,071 international matches (1872-2024) | **964** World Cup matches | **82** unique teams",
+          "position": { "x": 60, "y": 430 },
+          "size": { "w": 840, "h": 40 },
+          "style": {
+            "fontSize": 16,
+            "color": "#64748b",
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "notes": "System architecture diagram",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## System Architecture",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "code",
+          "language": "text",
+          "content": "User (Gradio UI)\n  -> ConversationBufferMemory (chat_history + user preferences)\n  -> ReAct Agent (GPT-3.5-turbo, temp=0.0)\n      |-- dataset_discovery_tool    (dataset metadata)\n      |-- data_ingestion_tool       (CSV load / sampling)\n      |-- retrieval_tool            (FAISS RAG search)\n      |-- analytics_tool            (pandas statistical analysis)\n      |-- prediction_tool           (2-stage LLM match prediction)\n      |-- llm_synthesis_tool        (free-form LLM synthesis)\n      |-- report_generation_tool    (markdown report generation)\n  -> Formatted Response",
+          "position": { "x": 60, "y": 100 },
+          "size": { "w": 540, "h": 280 },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 14,
+            "borderRadius": 8
+          }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "**Key Design Decisions**\n\n**Agent:** ReAct pattern with `create_react_agent` for dynamic tool selection\n\n**Memory:** `ConversationBufferMemory` persists chat history and 2 user preferences (favorite team, tournament)\n\n**LLMs:** 3 separate GPT-3.5-turbo instances with different temperatures:\n- Agent: temp=0.0 (deterministic)\n- Synthesis: temp=0.3 (creative)\n- Prediction: temp=0.2 (balanced)\n\n**Max iterations:** 8 per query",
+          "position": { "x": 620, "y": 100 },
+          "size": { "w": 310, "h": 310 },
+          "style": {
+            "fontSize": 14,
+            "color": "#334155",
+            "lineHeight": 1.6
+          }
+        },
+        {
+          "id": "e6",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 60, "y": 410 },
+          "size": { "w": 260, "h": 60 },
+          "style": { "fill": "#f0fdf4", "stroke": "#86efac", "strokeWidth": 1, "borderRadius": 8 }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "**LangChain** + **OpenAI**",
+          "position": { "x": 70, "y": 420 },
+          "size": { "w": 240, "h": 40 },
+          "style": { "fontSize": 16, "color": "#166534", "textAlign": "center", "verticalAlign": "middle" }
+        },
+        {
+          "id": "e8",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 350, "y": 410 },
+          "size": { "w": 260, "h": 60 },
+          "style": { "fill": "#fef3c7", "stroke": "#fcd34d", "strokeWidth": 1, "borderRadius": 8 }
+        },
+        {
+          "id": "e9",
+          "type": "text",
+          "content": "**FAISS** + **pandas**",
+          "position": { "x": 360, "y": 420 },
+          "size": { "w": 240, "h": 40 },
+          "style": { "fontSize": 16, "color": "#92400e", "textAlign": "center", "verticalAlign": "middle" }
+        },
+        {
+          "id": "e10",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 640, "y": 410 },
+          "size": { "w": 260, "h": 60 },
+          "style": { "fill": "#eff6ff", "stroke": "#93c5fd", "strokeWidth": 1, "borderRadius": 8 }
+        },
+        {
+          "id": "e11",
+          "type": "text",
+          "content": "**Gradio** + **matplotlib**",
+          "position": { "x": 650, "y": 420 },
+          "size": { "w": 240, "h": 40 },
+          "style": { "fontSize": 16, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle" }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "notes": "Data source and ingestion details",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Data Source & Ingestion",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "text",
+          "content": "**Source:** International football results (1872-2024)\nby martj42 on GitHub / Kaggle\n\n**3 CSV files** downloaded and cached locally:",
+          "position": { "x": 60, "y": 100 },
+          "size": { "w": 840, "h": 80 },
+          "style": { "fontSize": 18, "color": "#334155", "lineHeight": 1.5 }
+        },
+        {
+          "id": "e5",
+          "type": "table",
+          "columns": ["Dataset", "Rows", "Key Columns"],
+          "rows": [
+            ["results.csv", "49,071 matches", "date, home_team, away_team, scores, tournament, city"],
+            ["goalscorers.csv", "47,555 records", "date, teams, scorer, minute, own_goal, penalty"],
+            ["shootouts.csv", "665 records", "date, teams, winner"]
+          ],
+          "position": { "x": 60, "y": 195 },
+          "size": { "w": 840, "h": 130 },
+          "style": {
+            "fontSize": 14,
+            "color": "#334155",
+            "headerBackground": "#2563eb",
+            "headerColor": "#ffffff",
+            "borderColor": "#e2e8f0",
+            "striped": true,
+            "borderRadius": 8
+          }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "**Validation & Filtering**",
+          "position": { "x": 60, "y": 345 },
+          "size": { "w": 840, "h": 30 },
+          "style": { "fontSize": 20, "color": "#0f172a" }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "- Filtered to **964 FIFA World Cup matches** across **82 unique teams**\n- Date range: **1930-07-13** to **2022-12-18**\n- Joined goalscorers with WC matches: **2,720 World Cup goal records**\n- All columns validated with `assert` checks for schema integrity\n- Data cached to `data/` directory for reproducibility",
+          "position": { "x": 60, "y": 380 },
+          "size": { "w": 840, "h": 140 },
+          "style": { "fontSize": 16, "color": "#475569", "lineHeight": 1.7 }
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "notes": "RAG pipeline with FAISS",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## RAG Pipeline & Vector Store",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "code",
+          "language": "python",
+          "content": "# 1. Load World Cup CSV with LangChain CSVLoader\nloader = CSVLoader(file_path=wc_csv_path)\ndocuments = loader.load()           # 964 documents\n\n# 2. Split into chunks\ntext_splitter = RecursiveCharacterTextSplitter(\n    chunk_size=500, chunk_overlap=50\n)\nsplit_docs = text_splitter.split_documents(documents)\n\n# 3. Build FAISS vector store\nembeddings = OpenAIEmbeddings()\nvectorstore = FAISS.from_documents(split_docs, embeddings)\nretriever = vectorstore.as_retriever(search_kwargs={\"k\": 8})",
+          "position": { "x": 60, "y": 100 },
+          "size": { "w": 500, "h": 300 },
+          "style": {
+            "theme": "github-light",
+            "fontSize": 13,
+            "borderRadius": 8,
+            "highlightLines": [3, 9, 13]
+          }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "**Pipeline Flow**\n\n**CSVLoader** reads each CSV row as a LangChain `Document`\n\n**RecursiveCharacterTextSplitter** chunks documents (500 chars, 50 overlap)\n\n**OpenAIEmbeddings** generates vector representations\n\n**FAISS** stores 964 vectors for fast similarity search\n\n**Retriever** returns top-8 relevant documents per query",
+          "position": { "x": 580, "y": 100 },
+          "size": { "w": 350, "h": 280 },
+          "style": { "fontSize": 16, "color": "#334155", "lineHeight": 1.7 }
+        },
+        {
+          "id": "e6",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 60, "y": 420 },
+          "size": { "w": 840, "h": 70 },
+          "style": { "fill": "#f8fafc", "stroke": "#e2e8f0", "strokeWidth": 1, "borderRadius": 8 }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "**Retrieval Chain:** `create_retrieval_chain(retriever, stuff_documents_chain)` with a system prompt instructing the LLM to answer based on retrieved match data only",
+          "position": { "x": 80, "y": 430 },
+          "size": { "w": 800, "h": 50 },
+          "style": { "fontSize": 15, "color": "#475569", "verticalAlign": "middle", "lineHeight": 1.5 }
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "notes": "Seven tools defined for the agent",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## 7 Agent Tools",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "table",
+          "columns": ["#", "Tool Name", "Purpose", "Key Method"],
+          "rows": [
+            ["1", "dataset_discovery_tool", "Returns metadata about available datasets", "JSON metadata dump"],
+            ["2", "data_ingestion_tool", "Filters & returns sample match data", "pandas filtering by team/year"],
+            ["3", "retrieval_tool", "RAG search over World Cup matches", "FAISS retrieval + LLM stuff chain"],
+            ["4", "analytics_tool", "Head-to-head, form, top scorers", "pandas groupby + aggregation"],
+            ["5", "prediction_tool", "2-stage match outcome prediction", "gather_prompt -> predict_prompt"],
+            ["6", "llm_synthesis_tool", "Free-form LLM synthesis", "RAG context + synthesis prompt"],
+            ["7", "report_generation_tool", "Markdown report generation", "RAG + analytics + report prompt"]
+          ],
+          "position": { "x": 40, "y": 100 },
+          "size": { "w": 880, "h": 280 },
+          "style": {
+            "fontSize": 13,
+            "color": "#334155",
+            "headerBackground": "#2563eb",
+            "headerColor": "#ffffff",
+            "borderColor": "#e2e8f0",
+            "striped": true,
+            "borderRadius": 8
+          }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "Each tool is a `@tool`-decorated function with a docstring that the ReAct agent uses for automatic tool selection. The agent reasons step-by-step to choose the right tool for each user query.",
+          "position": { "x": 60, "y": 400 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 16, "color": "#64748b", "lineHeight": 1.5 }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "**Memory:** `ConversationBufferMemory` persists chat_history | **Preferences:** favorite_team, preferred_tournament auto-detected via regex",
+          "position": { "x": 60, "y": 460 },
+          "size": { "w": 840, "h": 40 },
+          "style": { "fontSize": 15, "color": "#475569", "textAlign": "center" }
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "notes": "Two-stage prediction pipeline",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Two-Stage Match Prediction",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 60, "y": 110 },
+          "size": { "w": 250, "h": 100 },
+          "style": { "fill": "#eff6ff", "stroke": "#93c5fd", "strokeWidth": 2, "borderRadius": 12 }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "**Input**\n\nTwo team names\n(e.g., Brazil vs Germany)",
+          "position": { "x": 70, "y": 118 },
+          "size": { "w": 230, "h": 85 },
+          "style": { "fontSize": 14, "color": "#1e40af", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+        },
+        {
+          "id": "e6",
+          "type": "shape",
+          "shape": "arrow",
+          "position": { "x": 320, "y": 158 },
+          "size": { "w": 60, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+        },
+        {
+          "id": "e7",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 390, "y": 110 },
+          "size": { "w": 230, "h": 100 },
+          "style": { "fill": "#fef3c7", "stroke": "#fcd34d", "strokeWidth": 2, "borderRadius": 12 }
+        },
+        {
+          "id": "e8",
+          "type": "text",
+          "content": "**Stage 1: Gather**\n\nanalytics_tool fetches\nH2H data + form stats",
+          "position": { "x": 400, "y": 118 },
+          "size": { "w": 210, "h": 85 },
+          "style": { "fontSize": 14, "color": "#92400e", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+        },
+        {
+          "id": "e9",
+          "type": "shape",
+          "shape": "arrow",
+          "position": { "x": 630, "y": 158 },
+          "size": { "w": 60, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 2 }
+        },
+        {
+          "id": "e10",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 700, "y": 110 },
+          "size": { "w": 230, "h": 100 },
+          "style": { "fill": "#f0fdf4", "stroke": "#86efac", "strokeWidth": 2, "borderRadius": 12 }
+        },
+        {
+          "id": "e11",
+          "type": "text",
+          "content": "**Stage 2: Predict**\n\nLLM generates score,\nwinner & key reasons",
+          "position": { "x": 710, "y": 118 },
+          "size": { "w": 210, "h": 85 },
+          "style": { "fontSize": 14, "color": "#166534", "textAlign": "center", "verticalAlign": "middle", "lineHeight": 1.4 }
+        },
+        {
+          "id": "e12",
+          "type": "code",
+          "language": "python",
+          "content": "# Stage 1: Factor Analysis\ngather_chain = gather_prompt | llm_prediction | StrOutputParser()\nfactors = gather_chain.invoke({\n    \"team_a\": team_a, \"team_b\": team_b,\n    \"historical_data\": analytics_tool.invoke(...),\n    \"preferences\": get_preferences_context(),\n})\n\n# Stage 2: Outcome Prediction\npredict_chain = predict_prompt | llm_prediction | StrOutputParser()\nprediction = predict_chain.invoke({\"factors\": factors})",
+          "position": { "x": 60, "y": 235 },
+          "size": { "w": 520, "h": 220 },
+          "style": { "theme": "github-light", "fontSize": 13, "borderRadius": 8 }
+        },
+        {
+          "id": "e13",
+          "type": "text",
+          "content": "**Prediction Output**\n\n- Predicted score (e.g., 2-1)\n- Predicted winner\n- 3 key reasons\n- Confidence level (Low/Medium/High)\n- Caveat about prediction limitations\n\n**User preferences** (favorite team, tournament) are injected into the gather prompt for personalized analysis.",
+          "position": { "x": 600, "y": 240 },
+          "size": { "w": 330, "h": 220 },
+          "style": { "fontSize": 15, "color": "#334155", "lineHeight": 1.7 }
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "notes": "Visualizations - champions and top scorers",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Visualizations (Innovation)",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "image",
+          "src": "./assets/wc_champions.png",
+          "position": { "x": 30, "y": 100 },
+          "size": { "w": 450, "h": 210 },
+          "style": { "objectFit": "contain", "borderRadius": 8 }
+        },
+        {
+          "id": "e5",
+          "type": "image",
+          "src": "./assets/top_scorers.png",
+          "position": { "x": 490, "y": 100 },
+          "size": { "w": 450, "h": 210 },
+          "style": { "objectFit": "contain", "borderRadius": 8 }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "World Cup Titles by Country",
+          "position": { "x": 30, "y": 310 },
+          "size": { "w": 450, "h": 30 },
+          "style": { "fontSize": 14, "color": "#64748b", "textAlign": "center" }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "All-Time Top 15 Scorers (with penalty breakdown)",
+          "position": { "x": 490, "y": 310 },
+          "size": { "w": 450, "h": 30 },
+          "style": { "fontSize": 14, "color": "#64748b", "textAlign": "center" }
+        },
+        {
+          "id": "e8",
+          "type": "text",
+          "content": "5 interactive matplotlib visualizations generated from the Gradio UI:\n**Head-to-Head comparison** | **Team form chart** | **Champions ranking** | **Tournament heatmap** | **Top scorers**",
+          "position": { "x": 60, "y": 360 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 15, "color": "#475569", "textAlign": "center", "lineHeight": 1.5 }
+        },
+        {
+          "id": "e9",
+          "type": "image",
+          "src": "./assets/heatmap_Brazil.png",
+          "position": { "x": 60, "y": 415 },
+          "size": { "w": 840, "h": 110 },
+          "style": { "objectFit": "contain", "borderRadius": 8 }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "notes": "Head-to-head and form visualizations",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Visualizations: Head-to-Head & Team Form",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 28, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "image",
+          "src": "./assets/h2h_Brazil_Germany.png",
+          "position": { "x": 30, "y": 95 },
+          "size": { "w": 900, "h": 200 },
+          "style": { "objectFit": "contain", "borderRadius": 8 }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "Brazil vs Germany: pie chart (win distribution) + cumulative wins over time",
+          "position": { "x": 60, "y": 298 },
+          "size": { "w": 840, "h": 25 },
+          "style": { "fontSize": 13, "color": "#64748b", "textAlign": "center" }
+        },
+        {
+          "id": "e6",
+          "type": "image",
+          "src": "./assets/form_Brazil.png",
+          "position": { "x": 30, "y": 330 },
+          "size": { "w": 900, "h": 190 },
+          "style": { "objectFit": "contain", "borderRadius": 8 }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "Brazil recent form: goal difference per match (green = win, red = loss, gray = draw)",
+          "position": { "x": 60, "y": 505 },
+          "size": { "w": 840, "h": 25 },
+          "style": { "fontSize": 13, "color": "#64748b", "textAlign": "center" }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "notes": "Gradio UI demo",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Gradio Interactive UI",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "text",
+          "content": "**3-Tab Interface built with `gr.Blocks`**",
+          "position": { "x": 60, "y": 100 },
+          "size": { "w": 840, "h": 35 },
+          "style": { "fontSize": 20, "color": "#334155" }
+        },
+        {
+          "id": "e5",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 60, "y": 150 },
+          "size": { "w": 270, "h": 200 },
+          "style": { "fill": "#eff6ff", "stroke": "#bfdbfe", "strokeWidth": 2, "borderRadius": 12 }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "**Chat Tab**\n\nConversational interface via `gr.ChatInterface`\n\n5 quick-query examples:\n- Who won 2014 WC?\n- H2H Brazil vs Germany\n- Predict Argentina vs France\n- Top scorers\n- Germany WC report",
+          "position": { "x": 75, "y": 160 },
+          "size": { "w": 240, "h": 180 },
+          "style": { "fontSize": 13, "color": "#1e40af", "lineHeight": 1.6 }
+        },
+        {
+          "id": "e7",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 345, "y": 150 },
+          "size": { "w": 270, "h": 200 },
+          "style": { "fill": "#f0fdf4", "stroke": "#bbf7d0", "strokeWidth": 2, "borderRadius": 12 }
+        },
+        {
+          "id": "e8",
+          "type": "text",
+          "content": "**Preferences Tab**\n\nPersistent user settings:\n\n- **Favorite team** dropdown\n  (82 WC teams)\n- **Preferred tournament** dropdown\n  (all tournaments in dataset)\n\nPreferences inject into agent prompt on each query.",
+          "position": { "x": 360, "y": 160 },
+          "size": { "w": 240, "h": 180 },
+          "style": { "fontSize": 13, "color": "#166534", "lineHeight": 1.6 }
+        },
+        {
+          "id": "e9",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 630, "y": 150 },
+          "size": { "w": 270, "h": 200 },
+          "style": { "fill": "#fef3c7", "stroke": "#fde68a", "strokeWidth": 2, "borderRadius": 12 }
+        },
+        {
+          "id": "e10",
+          "type": "text",
+          "content": "**Visualizations Tab**\n\n5 interactive chart generators:\n\n- Head-to-Head comparison\n- Team recent form\n- World Cup champions\n- Tournament heatmap\n- All-time top scorers\n\nTeam selection via dropdowns.",
+          "position": { "x": 645, "y": 160 },
+          "size": { "w": 240, "h": 180 },
+          "style": { "fontSize": 13, "color": "#92400e", "lineHeight": 1.6 }
+        },
+        {
+          "id": "e11",
+          "type": "text",
+          "content": "**Preference detection** also works in natural language: *\"My favorite team is Brazil\"* auto-updates via regex parsing before routing to the ReAct agent.",
+          "position": { "x": 60, "y": 380 },
+          "size": { "w": 840, "h": 40 },
+          "style": { "fontSize": 15, "color": "#64748b", "textAlign": "center", "lineHeight": 1.4 }
+        },
+        {
+          "id": "e12",
+          "type": "text",
+          "content": "**5 Pipeline Tests Passed:**  Set preference -> RAG historical Q&A -> H2H analysis -> Match prediction -> Report generation",
+          "position": { "x": 60, "y": 440 },
+          "size": { "w": 840, "h": 60 },
+          "style": { "fontSize": 16, "color": "#334155", "textAlign": "center", "lineHeight": 1.5 }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "notes": "Responsible AI disclaimer",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 6 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "## Responsible AI & Limitations",
+          "position": { "x": 60, "y": 30 },
+          "size": { "w": 840, "h": 50 },
+          "style": { "fontSize": 32, "color": "#0f172a" }
+        },
+        {
+          "id": "e3",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 60, "y": 85 },
+          "size": { "w": 120, "h": 4 },
+          "style": { "stroke": "#2563eb", "strokeWidth": 3 }
+        },
+        {
+          "id": "e4",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 60, "y": 105 },
+          "size": { "w": 840, "h": 55 },
+          "style": { "fill": "#fef2f2", "stroke": "#fecaca", "strokeWidth": 1, "borderRadius": 8 }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "This application is for **educational purposes only**. Outputs should not be interpreted as professional sports analytics advice or used for gambling.",
+          "position": { "x": 80, "y": 112 },
+          "size": { "w": 800, "h": 40 },
+          "style": { "fontSize": 16, "color": "#991b1b", "verticalAlign": "middle", "lineHeight": 1.4 }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "**Known Limitations**",
+          "position": { "x": 60, "y": 180 },
+          "size": { "w": 400, "h": 30 },
+          "style": { "fontSize": 20, "color": "#0f172a" }
+        },
+        {
+          "id": "e7",
+          "type": "text",
+          "content": "- **Historical data only** - dataset covers up to 2022 World Cup, no real-time data\n- **No causal reasoning** - LLM predictions based on statistical patterns, not real-world factors (injuries, morale, weather, tactics)\n- **Prediction uncertainty** - confidence levels are the model's self-assessment, not true statistical confidence\n- **Data completeness** - some historical records may be incomplete\n- **LLM bias** - may reflect biases in training data or historical football record",
+          "position": { "x": 60, "y": 215 },
+          "size": { "w": 840, "h": 150 },
+          "style": { "fontSize": 16, "color": "#475569", "lineHeight": 1.7 }
+        },
+        {
+          "id": "e8",
+          "type": "text",
+          "content": "**Transparency**",
+          "position": { "x": 60, "y": 380 },
+          "size": { "w": 400, "h": 30 },
+          "style": { "fontSize": 20, "color": "#0f172a" }
+        },
+        {
+          "id": "e9",
+          "type": "text",
+          "content": "- GPT-3.5-turbo via LangChain framework with verbose agent output\n- All tool orchestration, retrieval, and generation steps are visible\n- Public dataset: github.com/martj42/international_results (open license)\n- All data downloaded and cached locally for reproducibility",
+          "position": { "x": 60, "y": 415 },
+          "size": { "w": 840, "h": 100 },
+          "style": { "fontSize": 16, "color": "#475569", "lineHeight": 1.7 }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "notes": "Thank you slide",
+      "elements": [
+        {
+          "id": "e1",
+          "type": "shape",
+          "shape": "rectangle",
+          "position": { "x": 0, "y": 0 },
+          "size": { "w": 960, "h": 8 },
+          "style": { "fill": "#2563eb", "stroke": "transparent" }
+        },
+        {
+          "id": "e2",
+          "type": "text",
+          "content": "# Thank You",
+          "position": { "x": 80, "y": 140 },
+          "size": { "w": 800, "h": 80 },
+          "style": {
+            "fontSize": 48,
+            "color": "#0f172a",
+            "textAlign": "center"
+          }
+        },
+        {
+          "id": "e3",
+          "type": "text",
+          "content": "World Cup Match Predictor & Analyst Chatbot",
+          "position": { "x": 180, "y": 230 },
+          "size": { "w": 600, "h": 40 },
+          "style": {
+            "fontSize": 22,
+            "color": "#2563eb",
+            "textAlign": "center"
+          }
+        },
+        {
+          "id": "e4",
+          "type": "shape",
+          "shape": "line",
+          "position": { "x": 300, "y": 290 },
+          "size": { "w": 360, "h": 4 },
+          "style": { "stroke": "#e2e8f0", "strokeWidth": 2 }
+        },
+        {
+          "id": "e5",
+          "type": "text",
+          "content": "**Questions?**",
+          "position": { "x": 350, "y": 310 },
+          "size": { "w": 260, "h": 40 },
+          "style": {
+            "fontSize": 24,
+            "color": "#64748b",
+            "textAlign": "center"
+          }
+        },
+        {
+          "id": "e6",
+          "type": "text",
+          "content": "IE5374 Applied Generative AI | Northeastern University",
+          "position": { "x": 200, "y": 420 },
+          "size": { "w": 560, "h": 30 },
+          "style": {
+            "fontSize": 15,
+            "color": "#94a3b8",
+            "textAlign": "center"
+          }
+        }
+      ]
     }
   ]
 }
